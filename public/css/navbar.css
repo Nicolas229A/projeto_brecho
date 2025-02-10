@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap");
+
+.imgnav {
+  max-width: 50px;
+  max-height: 37px;
+  width: auto;
+  height: auto;
+}
+#navtitle {
+  font-family: "Permanent Marker", cursive;
+  color: #353535 !important;
+}
+
+#navitem:hover {
+  font-weight: bold;
+}
+
+#dropdownItem1 {
+  font-weight: bold;
+}

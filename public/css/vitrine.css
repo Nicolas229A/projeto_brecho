@@ -1,0 +1,41 @@
+.title {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    color: white;
+  }
+  
+  #idCard-body {
+    text-align: center;
+  }
+  
+  .name {
+    font-family: "Permanent Marker", cursive;
+    color: #353535;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .name:hover {
+    color: #D187A9;
+  }
+  
+  .col {
+    transition: transform 0.2s;
+  }
+  
+  .col:hover {
+    transform: scale(1.1);
+  }
+
+  #cardCabecalho, #cardDescricao, #cardItens {
+    font-family: "Permanent Marker", cursive;
+  }
+
+  #cardLink {
+    color: #D187A9;
+  }
+
+  #cardLink:hover {
+    color:#E881C0
+  }
