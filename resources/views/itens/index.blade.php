@@ -9,8 +9,12 @@
 
             <div class="container mt-4">
           
-            <a href="itens/novo" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">+ Novo Item</a>
+            <a href="/itens/novo" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">+ Novo Item</a>
             <br>
+            <br>
+            <form action="/relatorio">
+                <input type="submit" class="btn btn-success" role="button" value="Gerar Relatório">
+            </form>
             <br>
             <table class="table">
             <thead>
@@ -36,8 +40,13 @@
                     <td>{{ $item->tempo_de_uso }}</td>
                     <td>{{ $item->danos }}</td>
                     <td>
-                    <a href="itens/editar/id={{ $item->id }}" class="btn btn-warning" tabindex="-1" role="button" aria-disabled="true">Alterar</a>
-                    <a href="" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">Excluir</a>
+                    <a href="/itens/editar/id={{ $item->id }}" class="btn btn-warning" tabindex="-1" role="button" aria-disabled="true">Alterar</a>
+                    <form action="/itens/excluir" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <input type="hidden" name="id" id="id" value="{{ $item->id }}">
+                    <input type="submit" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true" value="Excluir">
+                    </form>
                     </td>
                 </tr>
                 @endforeach       
