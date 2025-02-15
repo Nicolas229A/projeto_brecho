@@ -13,4 +13,6 @@ Route::get('/itens/editar/{id}', [itensController::class, 'edit']);
 Route::post('itens/salvar', [itensController::class, 'store']);
 Route::delete('itens/excluir', [itensController::class, 'destroy']);
 
+Route::put('itens/alterar', [itensController::class, 'update']);
+
 Route::get('/relatorio', [RelatorioController::class, 'gerarRelatorio']);

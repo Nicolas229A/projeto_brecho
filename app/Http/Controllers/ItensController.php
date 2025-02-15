@@ -57,16 +57,29 @@ class ItensController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
-    {
-        return view('itens.edit');
+    {   
+        $item = Iten::find($id);
+        return view('itens.edit', ['item' => $item]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        $item = Iten::find($request->id);
+        $item->nome = $request->nome;
+        $item->especificacoes = $request->especificacoes;
+        $item->classificacao = $request->classificacao;
+        $item->preco = $request->preco;
+        $item->preco_novo = $request->preco_novo;
+        $item->tempo_de_uso = $request->tempo_de_uso;
+        $item->danos = $request->danos;
+        $item->link = $request->link;
+        $item->foto = $request->file('foto')->store('fotos_itens', 'public');
+        $item->save();
+
+        return redirect('/itens');
     }
 
     /**

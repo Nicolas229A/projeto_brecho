@@ -183,15 +183,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" id="navitem" href="./vitrine.html">Vitrine</a>
+              <a class="nav-link active" id="navitem" href="/">Vitrine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="navitem" href="./cadastrarItens.html">Cadastrar Itens</a>
+              <a class="nav-link active" id="navitem" href="itens/novo">Cadastrar Itens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="navitem" href="./admin.html">Administrador</a>
+              <a class="nav-link active" id="navitem" href="/itens">Administrador</a>
             </li>
-              <a class="btn btn-outline-dark" href="./login.html">Login</a>
+              <a class="btn btn-outline-dark" href="">Login</a>
             </ul>
         </div>
       </div>

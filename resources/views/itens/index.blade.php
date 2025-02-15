@@ -40,7 +40,7 @@
                     <td>{{ $item->tempo_de_uso }}</td>
                     <td>{{ $item->danos }}</td>
                     <td>
-                    <a href="/itens/editar/id={{ $item->id }}" class="btn btn-warning" tabindex="-1" role="button" aria-disabled="true">Alterar</a>
+                    <a href="/itens/editar/{{ $item->id }}" class="btn btn-warning" tabindex="-1" role="button" aria-disabled="true">Alterar</a>
                     <form action="/itens/excluir" method="post">
                         @csrf
                         @method('DELETE')
