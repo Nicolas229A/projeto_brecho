@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="imagex/png"
-      href="./img/icons/.ico"
+      href="img/brecho.ico"
     />
     <title>{{ $titulo }}</title>
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}"/>
@@ -59,7 +59,6 @@
         border-top-left-radius: 0;
         border-top-right-radius: 0;
       }
-
 
       .btn-primary {
             --bd-violet-bg: #FEEAFA;
@@ -165,7 +164,7 @@
       <div class="container-fluid">
         <img
               class="imgnav"
-              src="./public/img/icons/tanjiro-profile-removebg.png"
+              src="img/brecho.png"
               alt=""
             />
         <a class="navbar-brand" id="navtitle" href="">My Brechó</a>
@@ -205,5 +204,21 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- <footer style="background-color: #FEEAFA !important;">
+    <div class="container text-center">
+      <br>
+        <p>&copy; 2025 My Brechó. Todos os direitos reservados.</p>
+        <p>
+            <a href="https://github.com/Nicolas229A" id="navitem" class="text-dark mx-2">Github</a> |
+            <a href="https://www.instagram.com/nicolasalmeidav/" id="navitem" class="text-dark mx-2">Instagram</a>
+        </p>
+        <div>
+            <a href="https://facebook.com" id="navitem" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" id="navitem" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" id="navitem" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+  </footer> -->
   </body>
 </html>
