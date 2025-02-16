@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="imagex/png"
-      href="img/brecho.ico"
+      href="../img/brecho.ico"
     />
     <title>{{ $titulo }}</title>
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}"/>
@@ -164,7 +164,7 @@
       <div class="container-fluid">
         <img
               class="imgnav"
-              src="img/brecho.png"
+              src="../img/brecho.png"
               alt=""
             />
         <a class="navbar-brand" id="navtitle" href="">My Brechó</a>

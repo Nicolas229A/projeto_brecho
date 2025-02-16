@@ -1,7 +1,5 @@
 # My Brechó - Brechó Virtual
 
-![My Brechó](https://via.placeholder.com/800x400.png?text=My+Brech%C3%B3)
-
 ## 📌 Sobre o Projeto
 My Brechó é uma plataforma online desenvolvida em Laravel que permite aos usuários cadastrarem e venderem produtos usados. O objetivo é promover a economia circular e facilitar a compra e venda de itens de segunda mão.
 

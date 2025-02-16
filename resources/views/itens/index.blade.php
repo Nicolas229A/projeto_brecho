@@ -27,6 +27,7 @@
                 <th scope="col">Tempo de Uso</th>
                 <th scope="col">Danos</th>
                 <th scope="col">Ações</th>
+                <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -41,13 +42,15 @@
                     <td>{{ $item->danos }}</td>
                     <td>
                     <a href="/itens/editar/{{ $item->id }}" class="btn btn-warning" tabindex="-1" role="button" aria-disabled="true">Alterar</a>
-                    <form action="/itens/excluir" method="post">
+                    </td>
+                    <td>
+                        <form action="/itens/excluir" method="post">
                         @csrf
                         @method('DELETE')
                         <input type="hidden" name="id" id="id" value="{{ $item->id }}">
                     <input type="submit" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true" value="Excluir">
                     </form>
-                    </td>
+                </td>
                 </tr>
                 @endforeach       
             </tbody>
